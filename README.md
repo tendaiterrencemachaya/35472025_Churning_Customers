@@ -3,7 +3,7 @@
 ## Overview:
 This project aims to predict customer churn in a telecommunications company using neural networks. Customer churn, or customer attrition, refers to the phenomenon where customers stop doing business with a company. Predicting customer churn is essential for businesses to implement targeted retention strategies and minimize revenue loss.
 
-Table of Contents
+## Table of Contents
 
     Introduction
     Dataset
@@ -16,28 +16,31 @@ Table of Contents
     Demo Video
     How to Run
     Conclusion
+    Contributors
 
-Introduction
+## Introduction
 
-Customer churn prediction involves building machine learning models to identify customers who are likely to leave the service. In this project, we employ neural networks, a subset of machine learning, to predict customer churn based on historical data.
-Dataset
+- Customer churn prediction involves building machine learning models to identify customers who are likely to leave the service. In this project, we employ neural networks, a subset of machine learning, to predict customer churn based on historical data.
 
-The dataset used for this project contains various features related to customer behavior, such as usage patterns, contract details, and customer feedback. The target variable is binary, indicating whether a customer has churned (1) or not (0).
-Model Training
+## Dataset
 
-We train multiple neural network models with different hyperparameter configurations to find the optimal set of parameters. The training is performed on a training set, and model performance is evaluated on a validation set. The hyperparameters include the number of units in each layer, dropout rates, and the optimizer.
-Model Evaluation
+- The dataset used for this project contains various features related to customer behavior, such as usage patterns, contract details, and customer feedback. The target variable is binary, indicating whether a customer has churned (1) or not (0).
 
-The trained models are evaluated using the test set, and performance metrics such as accuracy and area under the receiver operating characteristic curve (AUC-ROC) are computed. These metrics provide insights into how well the models generalize to unseen data.
-Best Model Selection
+## Model Training
 
-We use grid search with cross-validation to find the best hyperparameters for our neural network. The model with the highest validation performance is selected as the best model. The evaluation metrics for this model on the test set are reported.
-Optimized Model
+- We train multiple neural network models with different hyperparameter configurations to find the optimal set of parameters. The training is performed on a training set, and model performance is evaluated on a validation set. The hyperparameters include the number of units in each layer, dropout rates, and the optimizer.
 
-An optimized neural network model is created based on the best hyperparameters. This model is then trained and evaluated to assess its performance. The goal is to further fine-tune the model and achieve better results.
-Conclusion
+## Model Evaluation
 
-The project concludes with insights into the predictive capabilities of the neural network models and recommendations for leveraging the results to implement targeted customer retention strategies.
+- The trained models are evaluated using the test set, and performance metrics such as accuracy and area under the receiver operating characteristic curve (AUC-ROC) are computed. These metrics provide insights into how well the models generalize to unseen data.
+  
+## Best Model Selection
+
+- We use grid search with cross-validation to find the best hyperparameters for our neural network. The model with the highest validation performance is selected as the best model. The evaluation metrics for this model on the test set are reported.
+
+## Optimized Model
+
+- An optimized neural network model is created based on the best hyperparameters. This model is then trained and evaluated to assess its performance. The goal is to further fine-tune the model and achieve better results.
 
 ## Technologies Used:
 1. Python
@@ -92,6 +95,11 @@ a. Markdown
 2. Install dependencies using `pip install -r requirements.txt`.
 3. Run the application using `python app.py`.
 4. Access the application at `http://localhost:5000` in your web browser.
+
+
+## Conclusion
+
+- The project concludes with insights into the predictive capabilities of the neural network models and recommendations for leveraging the results to implement targeted customer retention strategies.
 
 ## Contributors:
 -  Tendai Terrence Machaya
