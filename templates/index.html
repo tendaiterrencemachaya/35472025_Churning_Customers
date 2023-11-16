@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #800000;
+        }
+
+        form {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #800000;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #800000;
+            border-radius: 5px;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #800000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #600000;
+        }
+
+        #active-graph {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Customer Churn Prediction</h1>
+    <form method="POST" action="/predict">
+        <div class="input-group">
+            <label for="Total_Charges">Total Charges:</label>
+            <input type="text" name="Total_Charges" required>
+        </div>
+
+        <div class="input-group">
+            <label for="tenure">Tenure:</label>
+            <input type="text" name="tenure" required>
+        </div>
+
+        <div class="input-group">
+            <label for="monthlyCharges">Monthly Charges:</label>
+            <input type="text" name="monthlyCharges" required>
+        </div>
+
+        <div class="input-group">
+            <label for="Contract_Month-to-month">Does the customer have a Contract Month-to-month(If YES input = 1, else input = 0):</label>
+            <input type="text" name="Contract_Month-to-month" required>
+        </div>
+
+        <div class="input-group">
+            <label for="OnlineSecurity_No">Do customer have an Online Security No? (If YES input = 1, else input = 0):</label>
+            <input type="text" name="OnlineSecurity_No" required>
+        </div>
+
+        <div class="input-group">
+            <label for="PaymentMethod_Electronic check">Is PaymentMethod Electronic check? (If YES input = 1, else input = 0):</label>
+            <input type="text" name="PaymentMethod_Electronic check" required>
+        </div>
+
+        <div class="input-group">
+            <label for="TechSupport_No">Do customer have Tech Support Number? (If YES input = 1, else input = 0):</label>
+            <input type="text" name="TechSupport_No" required>
+        </div>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction:</h2>
+        <p>Will Customer Churn? : {{ prediction }}</p>
+        <p>Churn Rating Confidence Factor: {{ confidence_factor }} %</p>
+        <p>Churn Rating Prediction Confidence level: {{ confidence_level }} %</p>
+    {% endif %}
+</body>
+</html>
