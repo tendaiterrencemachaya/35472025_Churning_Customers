@@ -59,7 +59,7 @@ b. Scikit-learn
 3. Data Analysis and Visualization
 a. Pandas
 
-    Description: Pandas is used for data manipulation and analysis, particularly for handling the dataset.
+   Description: Pandas is used for data manipulation and analysis, particularly for handling the dataset.
 
 b. Matplotlib and Seaborn
 
@@ -70,17 +70,15 @@ b. Matplotlib and Seaborn
     Description: Google Colab Notebooks are employed for an interactive and collaborative development environment. The code for this project is organized and presented in google colab Notebooks to enhance readability and understanding.
 
 5. Version Control
-a. Git
 
     Description: Git is used for version control, enabling collaborative development and tracking changes to the codebase.
 
-6. Documentation
-a. Markdown
+7. Documentation
 
     Description: Markdown is used for creating documentation, including this README file, to provide an overview of the project and guide users on how to explore and use the code.
    
-7. Web Framework: Flask
-8. Frontend: HTML, CSS
+8. Web Framework: Flask
+9. Frontend: HTML, CSS
 
 ## Functionality:
 - Users can input customer data via a web interface.
