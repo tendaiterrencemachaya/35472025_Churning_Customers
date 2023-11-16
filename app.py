@@ -38,8 +38,7 @@ def predict():
 
         # Setting a threshold of 0.5 for classification
         if prediction >= 0.5:
-            churn_result = "Yes" # You might need to customize the confidence interval calculation based on your model
-        # Example below is a placeholder, you might need to adapt it based on your model's characteristics
+            churn_result = "Yes" 
         else:
             churn_result = "No"
 
@@ -53,7 +52,7 @@ def predict():
         # Calculate the width of the confidence interval
         confidence_factor = upper_bound - lower_bound
 
-        # 84% CONFIDENCE LEVEL
+        # 95% CONFIDENCE LEVEL
         confidence_level = 95
 
         # Displaying the prediction, confidence factor, and confidence level on the web page
